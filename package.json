@@ -1,0 +1,41 @@
+{
+    "scripts": {
+        "start": "pm2-runtime start index.js --name es6"
+    },
+    "name": "es6",
+    "version": "3.0.0",
+    "type": "module",
+    "dependencies": {
+        "@adiwajshing/baileys": "github:adiwajshing/baileys",
+        "@adiwajshing/keyed-db": "^0.2.4",
+        "@bochilteam/scraper": "^2.0.0",
+        "acrcloud": "latest",
+        "awesome-phonenumber": "^3.0.2",
+        "axios": "^0.26.0",
+        "chalk": "^5.0.0",
+        "cheerio": "^1.0.0-rc.10",
+        "deepai": "^1.0.21",
+        "emoji-regex": "^10.0.1",
+        "express": "*",
+        "file-type": "latest",
+        "form-data": "^4.0.0",
+        "got": "^12.0.1",
+        "gtts": "latest",
+        "human-readable": "^0.2.1",
+        "javascript-obfuscator": "latest",
+        "jimp": "^0.16.1",
+        "jsdom": "^19.0.0",
+        "link-preview-js": "^2.1.15",
+        "moment-timezone": "^0.5.34",
+        "node-fetch": "^3.2.0",
+        "node-webpmux": "^3.1.1",
+        "pino-pretty": "github:pinojs/pino-pretty",
+        "puppeteer": "^14.4.1",
+        "qrcode": "latest",
+        "qrcode-terminal": "latest",
+        "request-promise": "^4.2.6",
+        "vm2": "^3.9.9",
+        "wa-sticker-formatter": "^4.3.2",
+        "yt-search": "latest"
+    }
+}

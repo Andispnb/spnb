@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title>Home | Ivanzz`</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <meta name="viewport" content="width=device-width, initial-scale=0.5, maximum-scale=1.0, user-scalable=0"/>
+        <meta name="author" content=""/>
+        <meta name="description" content="Home - Ivanzz`">
+        <link rel="icon" type="image/png" sizes="16x16" href="https://i.ibb.co/cQwSSJ9/1657159953434.jpg">
+        <link rel="icon" type="image/png" sizes="32x32" href="https://i.ibb.co/cQwSSJ9/1657159953434.jpg">
+        <link rel="icon" type="image/png" sizes="96x96" href="https://i.ibb.co/cQwSSJ9/1657159953434.jpg">
+        <link rel="icon" type="image/png" sizes="192x192" href="https://i.ibb.co/cQwSSJ9/1657159953434.jpg">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <style>
+          {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  #notfound {
+    position: relative;
+    height: 100vh;
+    background: #1e2727;
+}
+  
+  #notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  
+  #notfound .notfound-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+  
+  #notfound .notfound-bg>div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background-color: #000000;
+  }
+  
+  #notfound .notfound-bg>div:nth-child(1) {
+    left: 20%;
+  }
+  
+  #notfound .notfound-bg>div:nth-child(2) {
+    left: 40%
+  }
+  
+  #notfound .notfound-bg>div:nth-child(3) {
+    left: 60%
+  }
+  
+  #notfound .notfound-bg>div:nth-child(4) {
+    left: 80%
+  }
+  
+  #notfound .notfound-bg>div:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -0.5px;
+    -webkit-transform: translateY(-160px);
+        -ms-transform: translateY(-160px);
+            transform: translateY(-160px);
+    height: 160px;
+    width: 2px;
+    background-color: #00ffff;
+  }
+  
+  @-webkit-keyframes drop {
+    90% {
+      height: 20px;
+    }
+    100% {
+      height: 160px;
+      -webkit-transform: translateY(calc(100vh + 160px));
+              transform: translateY(calc(100vh + 160px));
+    }
+  }
+  
+  @keyframes drop {
+    90% {
+      height: 20px;
+    }
+    100% {
+      height: 160px;
+      -webkit-transform: translateY(calc(100vh + 160px));
+              transform: translateY(calc(100vh + 160px));
+    }
+  }
+  
+  #notfound .notfound-bg>div:nth-child(1):after {
+    -webkit-animation: drop 3s infinite linear;
+            animation: drop 3s infinite linear;
+    -webkit-animation-delay: 0.2s;
+            animation-delay: 0.2s;
+  }
+  
+  #notfound .notfound-bg>div:nth-child(2):after {
+    -webkit-animation: drop 2s infinite linear;
+            animation: drop 2s infinite linear;
+    -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+  }
+  
+  #notfound .notfound-bg>div:nth-child(3):after {
+    -webkit-animation: drop 3s infinite linear;
+            animation: drop 3s infinite linear;
+    -webkit-animation-delay: 0.9s;
+            animation-delay: 0.9s;
+  }
+  
+  #notfound .notfound-bg>div:nth-child(4):after {
+    -webkit-animation: drop 2s infinite linear;
+            animation: drop 2s infinite linear;
+    -webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+  }
+  
+  .notfound {
+    max-width: 520px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .notfound .notfound-index {
+    height: 210px;
+    line-height: 210px;
+  }
+  
+  .notfound .notfound-index h1 {
+    font-family: 'Oswald', obelix-pro-cyr;
+    font-size: 135px;
+    font-weight: bold;
+    margin: -100px;
+    text-shadow: 4px 4px 0px #01deff;
+    color: rgb(68, 69, 70);
+  }
+  
+  .notfound .notfound-error {
+    height: 210px;
+    line-height: 210px;
+  }
+  
+  .notfound .notfound-error h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 188px;
+    font-weight: bold;
+    margin: 0px;
+    text-shadow: 4px 4px 0px #eeff00;
+  }
+  
+  .notfound h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: rgb(248, 250, 255);
+    text-shadow: 2px 2px 0px #000000;
+  }
+  
+  .notfound p {
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+  
+  .notfound a {
+    font-family: 'Lato', sans-serif;
+    padding: 10px 30px;
+    display: inline-block;
+    color: rgb(255, 254, 254);
+    font-weight: bold;
+    text-transform: uppercase;
+    -webkit-box-shadow: 0px 0px 0px 2px #000, 2px 2px 0px 2px #01deff;
+            box-shadow: 0px 0px 0px 2px #000, 2px 2px 0px 2px #01deff;
+    text-decoration: none;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+  }
+  
+  .notfound a:hover {
+    background-color: #01deff;
+    -webkit-box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #d0ff00;
+            box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #ffe600;
+  }
+  
+  .notfound-social {
+    margin-top: 25px;
+    color:01deff;
+  }
+  
+  .notfound-social>a {
+    width: 170px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0px;
+    margin: 10px 5px;
+  }
+  
+  .notfound-social>a:hover {
+    background-color: #01deff;
+    -webkit-box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #01deff;
+            box-shadow: 0px 0px 0px 0px #000, 0px 0px 0px 2px #01deff;
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .notfound .notfound-error {
+      height: 122px;
+      line-height: 122px;
+    }
+    .notfound .notfound-error h1 {
+      font-size: 122px;
+    }
+    .notfound h2 {
+      font-size: 26px;
+    }
+  }
+  
+  </style>
+    </head>
+    <body>
+      <div id="notfound">
+        <div class="notfound-bg">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="notfound">
+          <div class="notfound-index">
+            <h1>WELCOME</h1>
+          </div>
+         <h1 style="color: white;">To My Website</h1>
+          <div class="notfound-social">
+            <a href="https://xyvnz.herokuapp.com/docs">DOCS</a>
+          </div>
+        </div>
+      <script>
+        swal('Welcome!!', "Created by Ivanzz`", 'info')
+      </script>
+      </div>
+    </body>
+</script>
+</html>

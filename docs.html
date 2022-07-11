@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- CIEE MAU MALING YAAA -->
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Ivanzz">
+  <meta name="author" content="">
+  <meta content='#66bb6a' name='theme-color'/>
+  <link href="https://i.ibb.co/cQwSSJ9/1657159953434.jpg" rel="icon">
+  <title> Biodata | Ivanzz`</title>
+  <link href="https://frmdeveloper.github.io/RuangAdmin/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://frmdeveloper.github.io/RuangAdmin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <audio autoplay="autoplay" hidden="hidden" type="audio/mp3" src="https://b.top4top.io/m_2381tnc6z1.mp3"></audio>
+  <link href="https://frmdeveloper.github.io/RuangAdmin/css/ruang-admin.min.css" rel="stylesheet">
+  <script src="https://www.frm.rf.gd/plugins/swal.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/alfg/ping.js@0.2.2/dist/ping.min.js" type="text/javascript"></script>
+  <script src="https://www.frm.rf.gd/cookie.js"></script>
+</head>
+
+<body oncopy="return false" oncut="return false" style="background-color:#fafdfb" id="page-top">
+  <div id="wrapper">
+    <div id="content-wrapper" class="d-flex flex-column">
+      <div id="content">
+        <!-- TopBar -->
+        <nav class="navbar navbar-expand navbar-light bg-success topbar mb-4 static-top">
+          <div class="text-white font-weight-bold">My Biodata</div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+              </a>
+            </li>
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-info-circle"></i>
+              </a>
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Hello World !
+                </h6>
+              </div>
+            </li>
+            <div class="topbar-divider d-none d-sm-block"></div>
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="https://i.ibb.co/cQwSSJ9/1657159953434.jpg" style="max-width: 60px">
+                <span class="ml-2 d-none d-lg-inline text-white small">Anda</span>
+              </a>
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Profile
+                </a>
+  
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <!-- Topbar -->
+
+        <!-- Container Fluid-->
+        <div class="container-fluid" id="container-wrapper">
+
+
+
+              <div class="col-xl-3 col-md-6 mb-4">
+                <div class="card h-100">
+                  <div class="card-body">
+                    <div class="row no-gutters align-items-center">
+                      <div class="col mr-2" align="center">
+                        <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(this.innerText)"><i class="fas fa-clock"></i> <span id="jam">00:00:00</span></div>
+                        <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(this.innerText)"><i class="fas fa-calendar-alt"></i> <span id="tgl">0000-00-00</span></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+			<!-- Namaku --> 
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">NAMA</div>
+                      <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(this.innerText)">Ivan Maulana</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- UMUR --> 
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">UMUR</div>
+                      <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(umur.innerText)" id="umur">tahun</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- TEMPAT LAHIR --> 
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">STATUS KELAHIRAN</div>
+                      <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(this.innerText)">Wonogiri, 1 November 2007</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">TEMPAT TINGGAL</div>
+                      <div class="small font-weight-bold text-gray-600" onclick="Swal.fire(this.innerText)">Salatiga / Jawa Tengah</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sosmed-->
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center" onclick="location.href = 'https://wa.me/628812904283'">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">WHATSAPP</div>
+                      <div class="small font-weight-bold text-gray-600">+62 881-2904-283</div>
+                    </div>
+                    <div class="col-auto">
+                      <img src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c543.png" width="60px" height="60px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center" onclick="location.href = 'https://instagram.com/xyyvnz_'">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">INSTAGRAM</div>
+                      <div class="small font-weight-bold text-gray-600">xyyvnz_</div>
+                    </div>
+                    <div class="col-auto">
+                      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEi-Wu66aOdNa7ST9zs9ozlc1DYgyAHxVk0iNqYbuMfvUjzFC173E4JzPA&s=10" width="60px" height="60px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            
+            
+            <div class="col-xl-3 col-md-6 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center" onclick="location.href = 'https://github.com/Ivan-MLN'">
+                    <div class="col mr-2">
+                      <div class="text-success font-weight-bold text-uppercase mb-1">GITHUB</div>
+                      <div class="small font-weight-bold text-gray-600">Ivan-MLN</div>
+                    </div>
+                    <div class="col-auto">
+                      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" width="60px" height="60px">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+        </div>
+        <!---Container Fluid-->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to top -->
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  
+  
+  
+  <script>
+
+        function getDate() {
+          let date = new Date()
+          let YYYY = date.getFullYear()
+          let MM = date.getMonth() + 1
+          let DD = date.getDate()
+          let hh = date.getHours()
+          let mm = date.getMinutes()
+          let ss = date.getSeconds()
+
+          tgl.innerHTML = [YYYY, MM, DD].map(v => String(v).padStart(2, "0")).join("-")
+          jam.innerHTML = [hh, mm, ss].map(v => String(v).padStart(2, "0")).join(":")
+        }
+  function inspect() {
+     var script =  document.createElement('script')
+     script.src="//cdn.jsdelivr.net/npm/eruda"
+     document.body.appendChild(script)
+     script.onload = function () {
+         eruda.init()
+     }}
+if (location.href.includes('inspect=')) {inspect()}
+
+  function kyun(seconds){
+  function pad(s){
+    return (s < 10 ? '0' : '') + s;
+  }
+  var hours = Math.floor(seconds / (60*60));
+  var minutes = Math.floor(seconds % (60*60) / 60);
+  var seconds = Math.floor(seconds % 60);
+
+  //return pad(hours) + ':' + pad(minutes) + ':' + pad(seconds)
+  return `${pad(hours)} Jam ${pad(minutes)} Menit ${pad(seconds)} Detik`
+}
+
+function toast(teks, icon, timer) {
+if (!timer) {timer = 3000}
+Toast = Swal.mixin({
+  toast: true,
+  position: 'top-end',
+  showConfirmButton: false,
+  timer: timer,
+  timerProgressBar: true,
+  didOpen: (toast) => {
+    toast.addEventListener('mouseenter', Swal.stopTimer)
+    toast.addEventListener('mouseleave', Swal.resumeTimer)
+  }
+})
+Toast.fire({
+  icon: icon,
+  title: teks
+})
+}
+
+function getOS() {
+  var userAgent = window.navigator.userAgent,
+      platform = window.navigator.platform,
+      macosPlatforms = ['Macintosh', 'MacIntel', 'MacPPC', 'Mac68K'],
+      windowsPlatforms = ['Win32', 'Win64', 'Windows', 'WinCE'],
+      iosPlatforms = ['iPhone', 'iPad', 'iPod'],
+      os = null;
+  if (macosPlatforms.indexOf(platform) !== -1) {
+    os = 'Mac OS';
+  } else if (iosPlatforms.indexOf(platform) !== -1) {
+    os = 'iOS';
+  } else if (windowsPlatforms.indexOf(platform) !== -1) {
+    os = 'Windows';
+  } else if (/Android/.test(userAgent)) {
+    os = 'Android';
+  } else if (!os && /Linux/.test(platform)) {
+    os = 'Linux';
+  }
+
+  return os;
+}
+
+
+var p = new Ping();
+p.ping("https://www.google.com", function(err, data) {
+  if (err) {
+    console.log("error loading resource")
+    data = data + " " + err;
+  }
+  console.log(data+' ms')
+});
+
+function warnaprogress(id, warna, persen){
+	if (persen <= 5) {warna = 'danger'}
+	if (persen >= 6) {warna = 'warning'}
+	if (persen >= 16) {warna = 'success'}
+	document.getElementById(id).className = 'progress-bar bg-'+warna
+	console.log(document.getElementById(id).className)
+}
+
+function getAge() {
+	date = '1/11/2007'
+ 
+	if(date === ""){
+		alert("Please complete the required field!");
+    }else{
+		asia = new Date().toLocaleString('en-US', { timeZone: 'Asia/Jakarta' })
+		today = new Date(asia);
+		birthday = new Date(date);
+		year = 0;
+		if (today.getMonth() < birthday.getMonth()) {
+			year = 1;
+		} else if ((today.getMonth() == birthday.getMonth()) && today.getDate() < birthday.getDate()) {
+			year = 0;
+		}
+		var age = today.getFullYear() - birthday.getFullYear() - year;
+ 
+		if(age < 0){
+			age = 0;
+		}
+		document.getElementById('umur').innerText = age+' tahun'
+	}
+}
+window.setTimeout("getAge()",1000);
+        window.setInterval(getDate, 50)
+  </script>
+  <script src="https://www.frm.rf.gd/baterai.js"></script>  
+  <script src="https://frmdeveloper.github.io/RuangAdmin/vendor/jquery/jquery.min.js"></script>
+  <script src="https://frmdeveloper.github.io/RuangAdmin/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://frmdeveloper.github.io/RuangAdmin/vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="https://frmdeveloper.github.io/RuangAdmin/js/ruang-admin.min.js"></script>
+  <script src="https://frmdeveloper.github.io/RuangAdmin/vendor/chart.js/Chart.min.js"></script>
+  <script src="https://frmdeveloper.github.io/RuangAdmin/js/demo/chart-area-demo.js"></script>  
+
+</body>
+
+</html>
